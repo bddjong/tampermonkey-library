@@ -10,9 +10,12 @@
 // ==/UserScript==
 
 (function() {
-
     'use strict';
 
-    GM_addStyle('.AppHeader .AppHeader-globalBar { padding: 4px !important; }');
+    GM_addStyle(`
+    .AppHeader .AppHeader-globalBar { padding: 4px !important; }
 
+    [data-testid="board-view-column"] > :first-child > div {
+    	padding: 4px 8px;
+    }`);
 })();
